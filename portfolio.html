@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abisheela Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-family: 'Segoe UI', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* navbar styling */
+        .nav-link {
+            color: #0d6efd;
+            padding: 18px 16px;
+            cursor: pointer;
+        }
+        .nav-link.active {
+            background-color: transparent !important;
+            color: white !important;
+            border: none !important;
+            font-weight: bold;
+        }
+
+        /* main card styling */
+        .main-card {
+            max-width: 900px;
+            min-height: 550px;
+            border-radius: 30px;
+            margin: 50px auto;
+            background-color: #1a1d20; 
+            border: 1px solid #343a40;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        
+        .project-container { margin-bottom: 50px; border: none !important; }
+
+       
+
+        /* icons */
+        .social-icon-only {
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        .social-icon-only:hover { transform: translateY(-5px); }
+
+        .email-circle-only {
+            width: 80px;
+            height: 80px;
+            background-color: #a855f7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .email-circle-only:hover {
+            transform: scale(1.1);
+            background-color: #9333ea;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-3">
+        <ul class="nav nav-pills justify-content-start" id="myTab" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-content">Home</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-content">About</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="portfolio-tab" data-bs-toggle="tab" data-bs-target="#portfolio-content">Portfolio</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-content">Contact</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container d-flex justify-content-center">
+        <div class="card main-card text-white shadow-lg">
+            <div class="card-body text-center mt-4">
+                
+                <div class="tab-content" id="myTabContent">
+                    
+                    <div class="tab-pane fade show active" id="home-content">
+                        <img src="my pic.jpeg" class="profile-img shadow mb-3" alt="Abisheela">
+                        <h1 class="display-5">Hello, I'm Abisheela Alagumalaikannan</h1>
+                        <span class="badge bg-secondary mb-4 px-3 py-2">Frontend Developer</span>
+                        <hr class="border-secondary mx-5">
+                       <div class="px-5">
+            <p class="home-description">
+                I am a passionate developer dedicated to crafting 
+                <span class="text-white">clean</span>, <span class="text-white">efficient</span>, 
+                and <span class="text-white">user-friendly</span> web experiences. 
+                Focusing on modern frontend technologies to build seamless digital solutions.
+            </p>
+        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="about-content">
+    <div class="container py-5">
+        <h2 class="display-6 mb-5 text-info text-start fw-bold">About Me</h2>
+        
+        <div class="row text-start g-4">
+            <div class="col-md-7">
+                <p class="lead mb-4" style="line-height: 1.8;">
+                    I am a goal-oriented <strong>Frontend Developer</strong> from Coimbatore. 
+                    I love turning complex problems into simple, beautiful, and intuitive designs.
+                </p>
+                <p class="text-light opacity-75 mb-4">
+                    I recently graduated with a <strong>B.Sc. in Computer Technology</strong> from 
+                    <strong>Dr. NGP Arts and Science College</strong>. My journey in web development 
+                    started with a curiosity about how things work on the internet, which turned into a passion for building user-centric applications.
+                </p>
+                <p class="text-light opacity-75">
+                    When I'm not coding, you can find me exploring new UI trends or leveling up my skills with the latest technologies.
+                </p>
+            </div>
+
+            <div class="col-md-5">
+                <div class="about-card shadow-sm">
+                    <h5 class="text-info mb-4 d-flex align-items-center">
+                        
+                        Technical Toolkit
+                    </h5>
+                    <div class="d-flex flex-wrap gap-3">
+                        <span class="toolkit-badge">HTML5</span>
+                        <span class="toolkit-badge">CSS3</span>
+                        <span class="toolkit-badge">JavaScript</span>
+                        <span class="toolkit-badge">Bootstrap 5</span>
+                        <span class="toolkit-badge">Git & GitHub</span>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    <div class="tab-pane fade" id="portfolio-content">
+                        <div class="container py-4">
+                            <h2 class="mb-5 text-start">Projects</h2>
+                            
+                            <div class="project-container">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 text-start">
+                                        <h3 class="fw-bold">Calculator</h3>
+                                        <p class="text-secondary">Interactive web-based calculator built using HTML, CSS, and JavaScript. It handles basic arithmetic operations with a clean UI.</p>
+                                        <a href="https://abisheela13.github.io/calculator/cal.html" target="_blank" class="btn btn-outline-info">Live view →</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="calculator.png" class="img-fluid rounded shadow" alt="Calculator">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="border-secondary my-5">
+
+                            <div class="project-container">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 text-start">
+                                        <h3 class="fw-bold">To-Do List</h3>
+                                        <p class="text-secondary">A functional task management application developed with HTML, CSS, and JavaScript. It allows users to add and delete tasks.</p>
+                                        <a href="https://abisheela13.github.io/todolist/todolist.html" target="_blank" class="btn btn-outline-info">Live view →</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="todolist.png" class="img-fluid rounded shadow" alt="To-Do List">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                  <div class="tab-pane fade" id="contact-content" style="min-height: 400px;">
+    <div class="contact-wrapper d-flex flex-column align-items-center justify-content-center">
+        <h2 class="mb-5" style="color: #a855f7; font-weight: bold; letter-spacing: 2px;">Let's Connect!</h2>
+        <div class="d-flex gap-5 align-items-center justify-content-center">
+            <a href="https://www.linkedin.com/in/abisheela-alagumalaikannan1231" target="_blank" class="social-icon-only">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H3.395v7.225h1.548zm-1.548-8.874c.54 0 .902-.355.902-.823 0-.472-.362-.823-.902-.823-.539 0-.895.351-.895.823 0 .468.356.823.895.823zM13.148 13.397V9.3c0-2.192-1.17-3.213-2.731-3.213-1.258 0-1.822.693-2.138 1.185v-1.103H6.732c.02.437 0 7.225 0 7.225h1.547V9.33c0-.216.015-.432.079-.586.173-.432.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.897h1.547z"/></svg>
+            </a>
+            <a href="https://github.com/Abisheela13" target="_blank" class="social-icon-only">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            </a>
+            <a href="mailto:abisheela77@gmail.com" class="email-circle-only">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-.239-.156Zm9.189 4.027-6.57-4.027L16 4.697z"/></svg>
+            </a>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
